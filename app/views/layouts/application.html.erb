@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>VietKhmer</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title><%= full_title yield(:title) %></title>
+    <meta name="keywords" content="IT, information teachnology, teachnology, teachnology khmer, cambodia, computer, phone, sumsung, smartphone, teach, modern, khmer phone, khmer computer, camera, news, computer tips, phone tips, android, ios, windows phone, windows, linux, cell phone">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="content container">
+        <%= render "shared/flash" %>
+        <%= render "shared/header" %>
+        <div class="container">
+          <%= yield %>
+        </div>
+        <%= render "shared/footer" %>
+      </div>
+    </div>
+  </body>
 </html>
+
