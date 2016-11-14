@@ -1,0 +1,34 @@
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Battambang", "Hanuman", Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+#wrapper {
+  height: auto;
+  width: 100%;
+  background-color: #f3f3f3;
+
+  .content {
+    width: auto;
+    height: auto;
+    max-width: 1200px;
+    padding: 0px;
+    margin: auto;
+    background-color: #f3f3f3;
+  }
+
+  .container {
+    min-height: 600px;
+  }
+
+  .header {
+  }
+
+  .footer {
+  }
+}
