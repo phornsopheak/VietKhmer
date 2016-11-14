@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
-      <div class="content container">
+      <div class="content container cyan lighten-5">
         <%= render "shared/flash" %>
         <%= render "shared/header" %>
         <div class="container">
+          <%= render "shared/search" %>
           <%= yield %>
         </div>
         <%= render "shared/footer" %>
