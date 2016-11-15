@@ -1,3 +1,5 @@
 en:
   headers:
     about_us: "About Us"
+  search_bar:
+    placeholder: "Please put your words here!!"
