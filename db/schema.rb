@@ -53,7 +53,8 @@ ActiveRecord::Schema.define(version: 20161114040426) do
   add_index "word_articles", ["word_id"], name: "index_word_articles_on_word_id", using: :btree
 
   create_table "words", force: :cascade do |t|
-    t.string   "word",       limit: 255
+    t.string   "wordText",   limit: 255
+    t.integer  "searchTime", limit: 4
     t.boolean  "isIdiom",                default: false
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false

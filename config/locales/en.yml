@@ -1,3 +1,10 @@
 en:
   titles:
     title: "Viet-Khmer"
+    article: "Arcticles"
+  buttons:
+    search: "Search"
+  placeholders:
+    search_word: "Please input your word here!"
+  alerts:
+    no_result: "No results were fuond! Please make sure the word you put is correct."

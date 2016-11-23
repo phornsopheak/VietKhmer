@@ -1,5 +1,5 @@
 class Word < ActiveRecord::Base
-  validates :word, presence: true
+  validates :wordText, presence: true
 
   has_many :meanings
   has_many :word_articles

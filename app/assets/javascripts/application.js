@@ -12,7 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery-ui
+// require turbolinks
+//= require jquery-ui/autocomplete
+//= require words
 //= require materialize-sprockets
 //= require_tree .
 
@@ -21,4 +24,5 @@ $(document).ready(function() {
   $('select').material_select();
 
   $('.materialboxed').materialbox();
+
 });

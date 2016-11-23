@@ -1,3 +1,20 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+autocomplete = ->
+  bank_code = undefined
+
+autocomplete = ->
+  bank_code = undefined
+
+$("#account_bank").autocomplete
+  source: (request, response) ->
+    $.ajax
+      url: "/words"
+      dataType: "json"
+      data: name: request.term
+      success: (data) ->
+        response $.map(data, (item) ->
+          {
+            label: item.wordTest
+            code: item.id
+          }
+        )
+  minLength: 1
