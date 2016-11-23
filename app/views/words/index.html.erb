@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col s8">
+    <% if @words.any? %>
+      <%= render @words %>
+    <% else %>
+      <%= t "alerts.no_result" %>
+    <% end %>
+  </div>
+  <div class="col s4">
+    <div class="card-panel cyan lighten-5">
+      Top 30 words
+      <%= render partial: "shared/popular_word", collection: @popular_words  %>
+    </div>
+  </div>
+</div>

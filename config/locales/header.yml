@@ -1,5 +1,7 @@
 en:
   headers:
     about_us: "About Us"
+    article: "Articles"
+    vk_dic: "Viet-Khmer Dictionary"
   search_bar:
     placeholder: "Please put your words here!!"

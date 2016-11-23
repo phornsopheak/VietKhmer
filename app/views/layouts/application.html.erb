@@ -11,11 +11,14 @@
   </head>
   <body>
     <div id="wrapper">
-      <div class="content container cyan lighten-5">
+      <div class="content container grey lighten-5">
         <%= render "shared/flash" %>
         <%= render "shared/header" %>
         <div class="container">
-          <%= render "shared/search" %>
+          <h4><%= t "headers.vk_dic" %></h4>
+          <% unless params[:action] == "about_us" %>
+            <%= render "shared/search" %>
+          <% end %>
           <%= yield %>
         </div>
         <%= render "shared/footer" %>
