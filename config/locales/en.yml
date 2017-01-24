@@ -2,9 +2,29 @@ en:
   titles:
     title: "Viet-Khmer"
     article: "Arcticles"
+    lang: "Language:"
+    note: "Note"
+    remember_word: "Note words"
+    top_30: "Top 30 words"
   buttons:
     search: "Search"
+  selects:
+    langs:
+      kh: "ខ្មែរ"
+      vn: "Việt"
+      en: "English"
   placeholders:
     search_word: "Please input your word here!"
   alerts:
     no_result: "No results were fuond! Please make sure the word you put is correct."
+  label:
+    idiom_word: "idiom word"
+    technical_word: "technical word"
+    example: "Example :"
+    synonym: "Synonym: "
+    antonym: "Antonym: "
+    read_more: "Read more"
+    related_word: "related words"
+    langs:
+      kh_lang: "Vietnamese"
+      vn_lang: "Khmer"

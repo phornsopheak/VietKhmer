@@ -7,9 +7,7 @@
     <% end %>
   </div>
   <div class="col s4">
-    <div class="card-panel cyan lighten-5">
-      Top 30 words
-      <%= render partial: "shared/popular_word", collection: @popular_words  %>
-    </div>
+    <%= render "shared/lang" %>
+    <%= render "shared/top_30" %>
   </div>
 </div>

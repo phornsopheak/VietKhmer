@@ -1,0 +1,9 @@
+vn:
+  headers:
+    about_us: "Giới Thiêụ"
+    article: "Bài Viết"
+    vk_dic: "Từ Điển Việt-Khơ Me"
+    vkk_dic: "Từ Điển Kỹ Thuật"
+    note_list: "Noted Words"
+  search_bar:
+    placeholder: "Hãy nhập từ cần tìm!!"

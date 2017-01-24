@@ -1,0 +1,15 @@
+<div class="card grey lighten-4">
+  <div class="card-content black-text">
+    <%= link_to article_path(article) do %>
+      <span class="card-title">
+        <%= is_vn_lang? ? article.vn_title : article.kh_title %>
+      </span>
+    <% end %>
+    <p>
+      <%= is_vn_lang? ? article.vn_article.html_safe : article.kh_article.html_safe %>
+    </p>
+  </div>
+  <div class="card-action">
+    <%= link_to t("label.read_more") + " >>", article_path(article) %>
+  </div>
+</div>

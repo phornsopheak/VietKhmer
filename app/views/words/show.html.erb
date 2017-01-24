@@ -1,23 +1,28 @@
 <% provide :title, @word.wordText %>
-<div class="row">
+<div class="row word">
   <div class="col s8">
     <div class="row">
       <div class="col s10">
         <div class="blue-text text-darken-2 word-title">
-          <%= @word.wordText %>
+          <%= @word.wordText %><br/>
+          <%= render "shared/chips_technical" %>
+          <%= render "shared/chips_idiom" %>
         </div>
       </div>
       <div class="col s2">
-        <i class="material-icons">star</i>
-        <i class="material-icons">library_books</i>
+        <%= link_to note_click_path(word_id: @word.id), remote: true do %>
+          <i data-wordId= <%= @word.id %> class="<%= set_note_word_color %>" id="remember-word" title="<%= t "titles.note" %>">star</i>
+        <% end %>
+        <%= link_to note_path do %>
+          <i class="material-icons" id="list-remember-word"​​ title="<%= t "titles.remember_word" %>">library_books</i>
+        <% end %>
       </div>
     </div>
     <%= render @word.meanings %>
+    <%= render @word.meanings.example %>
   </div>
   <div class="col s4">
-    <div class="card-panel cyan lighten-5">
-      Top 30 words
-      <%= render partial: "shared/popular_word", collection: @popular_words  %>
-    </div>
+    <%=  render "shared/lang" %>
+    <%= render "shared/top_30" %>
   </div>
 </div>

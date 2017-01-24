@@ -1,0 +1,45 @@
+<div class="row article">
+  <div class="col s8">
+    <div class="word-title blue-text">
+      <%= @article.vn_title %><br>
+      <%= @article.kh_title %>
+    </div>
+    <%= link_to ph_to_ph_path(id: params[:id]), remote: true do %>
+      <i class="Medium material-icons orange-text">view_agenda</i>
+    <% end %>
+    <%= link_to line_to_line_path(id: params[:id]), remote: true do %>
+      <i class="Medium material-icons orange-text">subject</i>
+    <% end %>
+    <div id="content-article" >
+      <div class="vn-article">
+        <div class="chip">
+          <img src="/assets/vn.png" alt="Contact Person">
+          <%= t "label.langs.vn_lang" %>
+        </div>
+        <%= @article.vn_article.html_safe %>
+      </div>
+
+      <div class="kh-article">
+        <div class="chip">
+          <img src="/assets/kh.png" alt="Contact Person">
+          <%= t "label.langs.kh_lang" %>
+        </div>
+        <%= @article.kh_article.html_safe %>
+      </div>
+    </div>
+    <% if !@article.words.blank? %>
+      <div class="relate-word">
+        <span class=" new badge blue delete-margin-left" data-badge-caption="<%= t 'label.related_word' %>">
+          <%= @article.words.count %>
+        </span>
+        &nbsp;&nbsp;
+        <%= render @article.words %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="col s4">
+    <%=  render "shared/lang" %>
+    <%= render "shared/top_30" %>
+  </div>
+</div>

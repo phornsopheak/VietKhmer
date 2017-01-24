@@ -3,5 +3,7 @@ en:
     about_us: "About Us"
     article: "Articles"
     vk_dic: "Viet-Khmer Dictionary"
+    vkk_dic: "Technical Dictionary"
+    note_list: "Noted Words"
   search_bar:
     placeholder: "Please put your words here!!"

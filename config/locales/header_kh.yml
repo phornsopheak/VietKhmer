@@ -1,0 +1,9 @@
+kh:
+  headers:
+    about_us: "អំពីយើង"
+    article: "អត្ថបទ"
+    vk_dic: "វចនានុក្រម​ វៀត-​ខ្មែរ"
+    vkk_dic: "វចនានុក្រម​បច្ចេកទេស"
+    note_list: "Noted Words"
+  search_bar:
+    placeholder: "បញ្ចូល​ពាក្យ​ដែល​ចង់​ស្វែង​រក​នៅទីន"

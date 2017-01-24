@@ -1,0 +1,8 @@
+var noRememberClass = "material-icons grey-text";
+var rememberClass = "material-icons yellow-text";
+var rememberWord = document.getElementById('remember-word');
+if (rememberWord.className.includes("yellow-text")) {
+  rememberWord.className = noRememberClass;
+}else {
+  rememberWord.className = rememberClass;
+}

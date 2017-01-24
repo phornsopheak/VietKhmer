@@ -1,3 +1,16 @@
 <div class="show-word">
   <%= link_to word.wordText, word_path(word) %>
+  <% if params[:action] != "show" %>
+    <% if word.isIdiom %>
+      <i class="font-size-icon-note Tiny material-icons red-text">stop</i>
+    <% end %>
+    <% if word.isTechnical %>
+      <i class="font-size-icon-note Tiny material-icons green-text">stop</i>
+    <% end %>
+    <% if !(params[:action] == "note") && is_noted?(word) %>
+      <i class="font-size-icon-note Tiny material-icons yellow-text">stop</i>
+    <% end %>
+  <% else %>
+    ,&nbsp;
+  <% end %>
 </div>

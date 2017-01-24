@@ -1,1 +1,9 @@
-index.html.erb
+<div class="row">
+  <div class="col s8">
+    <%= render @articles %>
+  </div>
+  <div class="col s4">
+    <%=  render "shared/lang" %>
+    <%= render "shared/top_30" %>
+  </div>
+</div>

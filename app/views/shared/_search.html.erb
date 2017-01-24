@@ -1,3 +1,4 @@
+<h4><%= t "headers.vk_dic" %></h4>
 <div class="search-bar">
   <%= search_form_for @q do |f| %>
     <div class="file-field input-field">
@@ -6,7 +7,11 @@
         <i class="material-icons right">search</i>
       </button>
       <div class="file-path-wrapper">
-        <%= f.search_field :wordText_cont, class: "file-path validate", type: "text", placeholder: t("placeholders.search_word") %>
+      <%= f.search_field :wordText_cont, class: "file-path validate", type: "text",
+       placeholder: t("placeholders.search_word") %>
+       <!-- On screen keyboard -->
+       <!--  <%= f.search_field :wordText_cont, class: "file-path validate osk-trigger", type: "text", placeholder: t("placeholders.search_word"), "data-osk-options" => "disableReturn disableTab" %>
+        <i class="medium material-icons osk-trigger">subtitles</i> -->
       </div>
     </div>
   <% end %>

@@ -1,3 +1,12 @@
 // Place all the styles related to the words controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.word {
+  .delete-margin-left {
+    margin-left: 0px;
+  }
+
+  .font-size-icon-note {
+    font-size: 5px;
+  }
+}

@@ -2,8 +2,8 @@
 <html>
   <head>
     <title><%= full_title yield(:title) %></title>
-    <meta name="keywords" content="IT, information teachnology, teachnology, teachnology khmer, cambodia, computer, phone, sumsung, smartphone, teach, modern, khmer phone, khmer computer, camera, news, computer tips, phone tips, android, ios, windows phone, windows, linux, cell phone">
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <meta name="keywords" content="">
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -15,8 +15,7 @@
         <%= render "shared/flash" %>
         <%= render "shared/header" %>
         <div class="container">
-          <h4><%= t "headers.vk_dic" %></h4>
-          <% unless params[:action] == "about_us" %>
+          <% if params[:controller] == "words" %>
             <%= render "shared/search" %>
           <% end %>
           <%= yield %>
@@ -26,4 +25,3 @@
     </div>
   </body>
 </html>
-

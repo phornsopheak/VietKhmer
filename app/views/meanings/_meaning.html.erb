@@ -1,9 +1,24 @@
 <div class="margin-left-meaning">
   <div class="meaning-title"><i class="tiny material-icons  pink-text">room</i><%= meaning.meaning %></div>
+  <% if meaning.isIdiom %>
+    <span class="delete-margin-left new badge red left" data-badge-caption="">
+      <%= t "label.idiom_word" %>
+    </span><br/>
+  <% end %>
+  <% antonym = meaning.antonymWords %>
+  <% synonym = meaning.synonymWords %>
+  <% if !antonym.blank? %>
+    <%= render partial: "shared/antonym", object: antonym %>
+  <% end %>
+  <% if !synonym.blank? %>
+   <%= render partial: "shared/synonym", object: synonym %>
+  <% end %>
   <div class="margin-left-example">
-    Example:
-    <div class="margin-left-example-title">
-      <%= render meaning.examples %>
-    </div>
+    <% if !meaning.examples.blank? %>
+      <%= t "label.example" %>
+      <div class="margin-left-example-title">
+        <%= render meaning.examples %>
+      </div>
+    <% end %>
   </div>
 </div>

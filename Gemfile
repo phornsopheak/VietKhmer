@@ -13,6 +13,15 @@ gem 'turbolinks'
 gem 'materialize-sass'
 gem 'jbuilder', '~> 2.0'
 gem 'ransack'
+gem 'rails-i18n', '~> 4.0.0'
+gem 'rails_admin', '~> 1.0'
+gem 'devise'
+gem 'ckeditor'
+gem 'paperclip'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'google-api-client', '~> 0.9'
+gem 'bcrypt', '~> 3.1.7'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
@@ -22,4 +31,3 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
 end
-

@@ -1,0 +1,30 @@
+vn:
+  titles:
+    title: "Việt-Khơ Me"
+    article: "Arcticlesvn"
+    lang: "Tiếng:"
+    note: "Ghi nhớ"
+    remember_word: "Từ đã ghi nhớ"
+    top_30: "30 từ phổ biến"
+  buttons:
+    search: "Tìm Kiếm"
+  selects:
+    langs:
+      kh: "ខ្មែរ"
+      vn: "Việt"
+      en: "English"
+  placeholders:
+    search_word: "Hãy nhập từ cần tìm!!"
+  alerts:
+    no_result: "Không có kết quả đã tìm thấy ! Hãy chắc chắn từ nhập vào là đúng."
+  label:
+    idiom_word: " thành ngữ"
+    technical_word: "từ kỹ thuật"
+    example: "Ví dụ :"
+    synonym: "Từ đồng nghĩa: "
+    antonym: "Từ trái nghĩa: "
+    read_more: "Độc thêm"
+    related_word: "từ liên quan"
+    langs:
+      kh_lang: "Tiếng Khơ Me"
+      vn_lang: "Tiếng Việt"

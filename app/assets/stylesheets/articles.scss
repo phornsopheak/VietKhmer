@@ -1,3 +1,23 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.article {
+  .kh-article {
+    margin-top: 20px;
+  }
+
+  .vn-article {
+    margin-top: 10px;
+  }
+
+  .relate-word {
+    display: inline-flex;
+    margin-top: 10px;
+
+    .delete-margin-left {
+      margin-left: 0px;
+    }
+  }
+
+  .line-to-line-text {
+    margin-top: 10px;
+    line-height: 30px;
+  }
+}

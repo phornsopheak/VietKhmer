@@ -1,0 +1,30 @@
+kh:
+  titles:
+    title: "Viet-Khmer"
+    article: "អត្ថបទ"
+    lang: "ភាសា:"
+    note: "ចំណា"
+    remember_word: "ពាក្យ​កត់ចំណា"
+    top_30: "៣០​ ពាក្យ​ពេញនិយម"
+  buttons:
+    search: "ស្វែង​រក"
+  selects:
+    langs:
+      kh: "ខ្មែរ"
+      vn: "Việt"
+      en: "English"
+  placeholders:
+    search_word: "បញ្ចូល​ពាក្យ​ដែល​ចង់​ស្វែង​រក​នៅទីន"
+  alerts:
+    no_result: "ពមានលទ្ធផល​បាន​ពី​ការ​ស្វែក​រកទេ! ចូរ​ច្បាស់លាស់ថា​ ពាក្យ​ដែល​អ្នក​បាន​បញ្ចូល​គឺ​ត្រឹមត្រូវ"
+  label:
+    idiom_word: "ក្រៀមភាសា"
+    technical_word: "ពាក្យ​បច្ចេកទេស"
+    example: "ឧទាហរណ៍ :"
+    synonym: "ពាក្យដូច: "
+    antonym: "ពាក្យផ្ទុយ: "
+    read_more: "អាន​បន្ត"
+    related_word: "ពាក្យ​ទាកទង​នឹង​អត្ថបទ"
+    langs:
+      kh_lang: "ភាសាខ្មែរ"
+      vn_lang: "ភាសាវៀតណាម"

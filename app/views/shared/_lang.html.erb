@@ -1,0 +1,7 @@
+<label><%= t "titles.lang" %></label>
+<select class="icons" onchange="javascript:location.href = this.value;">
+  <option value="" disabled selected><%= set_lang %></option>
+  <option value="/words?locale=kh" data-icon="/assets/kh.png" class="circle"><%= t "selects.langs.kh" %></option>
+  <option value="/words?locale=vn" data-icon="/assets/vn.png" class="circle"><%= t "selects.langs.vn" %></option>
+  <option value="/words?locale=en" data-icon="/assets/en.png" class="circle"><%= t "selects.langs.en" %></option>
+</select>

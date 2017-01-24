@@ -1,4 +1,5 @@
 class Example < ActiveRecord::Base
+  include RailsAdminExample
 
   belongs_to :meaning
 

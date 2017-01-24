@@ -3,6 +3,7 @@ class WordsController < ApplicationController
 
   def show
     @word = Word.find params[:id]
+    @word.update_attribute(:searchTime, @word.searchTime + 1)
   end
 
   def index
@@ -10,7 +11,6 @@ class WordsController < ApplicationController
   end
 
   private
-
   def search_object
     @q = Word.ransack(params[:q])
   end
